@@ -41,7 +41,7 @@ public class SignUpFragmentTwoB extends Fragment implements View.OnClickListener
         switch (view.getId()){
             case R.id.next_button_signupfragmenttwoB:
                 MainActivity mainActivity= (MainActivity) getActivity();
-             //   mainActivity.callFragment(new SignUpFragmentThree(),"SignUpFragmentThree",null);
+                mainActivity.callFragment(new SignUpFragmentThree(),"SignUpFragmentThree",null);
                 break;
         }
     }
