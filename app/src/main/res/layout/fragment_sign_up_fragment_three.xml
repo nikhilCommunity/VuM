@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.milan.vum.fragment.SignUpFragmentThree">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <com.milan.vum.javafiles.CircleImageView
+            android:layout_width="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_launcher_background"
+            android:id="@+id/signupcircleimageview"
+            app:civ_border_color="#000"
+            app:civ_border_width="1dp"
+            android:layout_height="100dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/submit_button_sign_upfragment_three"
+            android:text="Upload Your Picture"
+            android:textColor="#fff"
+            android:background="@drawable/button_shape"
+            android:textAllCaps="false"/>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="Some Text Some Text Some Text"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Some Text Some Text Some Text"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Some Text Some Text Some Text"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Sync with Facebook"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/fb_button_shape"
+            android:layout_height="35dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Sync with Google"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/google_button_shape"
+            android:layout_height="35dp" />
+    </LinearLayout>
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/forward_button_signupfragthree"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/ic_arrow_forward_black_24dp"
+        />
+</RelativeLayout>

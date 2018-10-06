@@ -1,0 +1,82 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.milan.vum.fragment.WelcomeFragOne">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbarlayout"
+        android:background="#f5f5f5"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:id="@+id/innerrelativelayout_welcomefragfment">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sharelog"
+                android:id="@+id/sharelogtext_welcomefrag"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="People"
+                android:id="@+id/peopletext_welcomefrag"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/sharelogtext_welcomefrag"
+                android:id="@+id/linealayout_welcomefragone"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_color_lens_black_24dp" />
+                <com.milan.vum.javafiles.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/welcome_frag_circularimage"
+                    android:src="@drawable/ic_launcher_background"
+                    app:civ_border_color="#000"
+                    app:civ_border_width="1dp"
+                    android:layout_height="60dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="15"
+                    android:textColor="#d3d3d3"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_below="@id/appbarlayout"
+            android:id="@+id/recyclerview_welcomeFragOne"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

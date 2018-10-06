@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.milan.vum.fragment.PeopleFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your People"
+        android:id="@+id/yourpeopletext_fragPeople"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview_peopelFrag"
+        android:layout_below="@+id/yourpeopletext_fragPeople"
+        android:layout_margin="5dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

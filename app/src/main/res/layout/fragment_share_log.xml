@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.milan.vum.fragment.ShareLogFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:background="@drawable/shape"
+        android:id="@+id/linearlayout_sharelog"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/sharelog_text_onclick"
+            android:text="Share Log"/>
+        <TextView
+            android:layout_width="1dp"
+            android:background="#000"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/favourites_text_onclick"
+            android:text="Favourites"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview_sharelog"
+        android:layout_below="@id/linearlayout_sharelog"
+        android:layout_margin="5dp">
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
