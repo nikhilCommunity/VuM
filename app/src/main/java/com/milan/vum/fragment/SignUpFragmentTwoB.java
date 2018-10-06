@@ -3,6 +3,7 @@ package com.milan.vum.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,6 +32,7 @@ public class SignUpFragmentTwoB extends Fragment implements View.OnClickListener
         View signupfragmenttwoB= inflater.inflate(R.layout.fragment_sign_up_fragment_two_b, container, false);
         next_button_signupfragmenttwoB=signupfragmenttwoB.findViewById(R.id.next_button_signupfragmenttwoB);
         next_button_signupfragmenttwoB.setOnClickListener(this);
+        Log.d("nikhil", "onCreateView: ");
         return signupfragmenttwoB;
     }
 
@@ -39,7 +41,7 @@ public class SignUpFragmentTwoB extends Fragment implements View.OnClickListener
         switch (view.getId()){
             case R.id.next_button_signupfragmenttwoB:
                 MainActivity mainActivity= (MainActivity) getActivity();
-                mainActivity.callFragment(new SignUpFragmentThree(),"SignUpFragmentThree",null);
+             //   mainActivity.callFragment(new SignUpFragmentThree(),"SignUpFragmentThree",null);
                 break;
         }
     }
